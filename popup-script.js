@@ -3,10 +3,8 @@ function drawImage(text) {
   console.log("hello" + canvas.width);
   const ctx = canvas.getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
-  ctx.rect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "white";
-  ctx.fill();
+  // ctx.beginPath();
+  // ctx.rect(0, 0, canvas.width, canvas.height);
   const img = document.getElementById("mocking-spongebob");
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "white";
@@ -16,7 +14,8 @@ function drawImage(text) {
   ctx.lineWidth = 2;
   ctx.strokeText(text.current, 10, 50);
 
-  // dataUrl = canvas.toDataURL(),
+  var generatedMeme = document.createElement('img');
+  generatedMeme.src = canvas.toDataURL()
 
 }
 

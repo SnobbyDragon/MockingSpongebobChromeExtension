@@ -2,7 +2,7 @@
   "name": "Mocking Spongebob Meme Maker",
   "version": "1.0",
   "description": "Creates a mocking spongebob meme from highlighted text.",
-  "permissions": ["contextMenus", "storage"],
+  "permissions": ["contextMenus", "storage", "clipboardWrite"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false

@@ -16,7 +16,9 @@ function drawImage(text) {
 
   var generatedMeme = document.createElement('img');
   generatedMeme.src = canvas.toDataURL()
-
+  generatedMeme.style.width = canvas.width;
+  generatedMeme.style.height = canvas.height;
+  document.body.appendChild(generatedMeme);
 }
 
 window.onload = function() {

@@ -21,6 +21,8 @@ h1 {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: 24px;
+  font-family: "Comic Sans MS";
 }
 
 /* div.centerButton {
@@ -54,9 +56,20 @@ img.original {
   display: none;
 }
 
-img {
+div.formatText {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 350px;
+  align-content: center;
+}
+
+/* img {
   position: relative;
   margin: 10px;
   padding: 0;
   top: 50px;
-}
+} */
